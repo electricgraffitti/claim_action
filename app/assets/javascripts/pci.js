@@ -6,6 +6,8 @@
 //= require_tree ./views
 //= require_tree ./helpers
 //= require_tree ./templates
+//= require_tree ./mixins
+//= require_tree ./fixtures
 //= require ./router
 //= require_tree ./routes
 //= require_self

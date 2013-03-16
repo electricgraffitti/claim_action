@@ -17,4 +17,4 @@
 //= require ember-data
 //= require_self
 //= require pci
-Nucleus = Ember.Application.create();
+window.Nucleus = Ember.Application.create();
