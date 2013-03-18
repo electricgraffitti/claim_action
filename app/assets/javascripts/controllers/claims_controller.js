@@ -1,8 +1,8 @@
-Nucleus.ClaimsController = Ember.ArrayController.extend({});
+Nucleus.ClaimsController = Ember.ArrayController.extend();
 
-Nucleus.ClaimController = Ember.ObjectController.extend({
+Nucleus.ClaimController = Ember.ObjectController.extend();
 
-});
+Nucleus.ClaimDetailsController = Ember.ArrayController.extend();
 
 Nucleus.LinesController = Ember.ArrayController.extend({
   needs: "claim",

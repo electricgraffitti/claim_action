@@ -1,8 +1,5 @@
 Nucleus.ClientDetail = DS.Model.extend({
-	specialty: DS.attr('string'),
-	provider: DS.attr('boolean'),
-	group: DS.attr('boolean'),
-	patient: DS.attr('string'),
-	gender: DS.attr('string'),
+	title: DS.attr('string'),
+	value: DS.attr('boolean'),
 	claim: DS.belongsTo('Nucleus.Claim')
 });

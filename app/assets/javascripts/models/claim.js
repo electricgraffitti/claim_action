@@ -2,10 +2,10 @@ Nucleus.Claim = DS.Model.extend({
 	claimSeq: DS.attr('string'),
 	hasDocuments: DS.attr('boolean'),
 	isLocked: DS.attr('boolean'),
-
-	// Associations
 	claimDetail: DS.attr('object'),
-	clientDetails: DS.hasMany('Nucleus.ClientDetail', { embedded: true }),
+	
+	// Associations
+	clientDetails: DS.hasMany('Nucleus.ClientDetail'),
 	lines: DS.hasMany('Nucleus.Line'),
 
 	// Properties 
