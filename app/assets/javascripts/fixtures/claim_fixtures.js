@@ -5,7 +5,8 @@ Nucleus.Claim.FIXTURES = [
   hasDocuments: 0,
   isLocked: 0,
   lines: [],
-  claimDetails: [1,2,3,4,5],
+  clientDetails: [1, 2, 3, 4, 5],
+  dxCodes: [1,2],
   claimDetail: {
     specialty: "54 - Dietrician",
     provider: "Jack James",
@@ -18,8 +19,9 @@ Nucleus.Claim.FIXTURES = [
   claimSeq: '324329989-5',
   hasDocuments: 1,
   isLocked: 1,
-  lines: [],
-  claimDetails: [6,7,8,9,10],
+  lines: [4,5],
+  clientDetails: [6, 7, 8, 9, 10],
+  dxCodes: [],
   claimDetail: {
     specialty: "12 - Foot Doctor",
     provider: "Meta Tarsels",
@@ -33,7 +35,8 @@ Nucleus.Claim.FIXTURES = [
   hasDocuments: 1,
   isLocked: 0,
   lines: [],
-  claimDetails: [11,12,13,14,15],
+  clientDetails: [11, 12, 13, 14, 15],
+  dxCodes: [1,2,3],
   claimDetail: {
     specialty: "87 - Sometrician",
     provider: "Miss Tury",
@@ -47,7 +50,8 @@ Nucleus.Claim.FIXTURES = [
   hasDocuments: 0,
   isLocked: 1,
   lines: [],
-  claimDetails: [16,17,18,19,20],
+  clientDetails: [16,17,18,19,20],
+  dxCodes: [4,5,6],
   claimDetail: {
     specialty: "18 - Sonictrician",
     provider: "Rick James",
@@ -61,7 +65,8 @@ Nucleus.Claim.FIXTURES = [
   hasDocuments: 1,
   isLocked: 0,
   lines: [],
-  claimDetails: [21,22,23,24,25],
+  clientDetails: [21,22,23,24,25],
+  dxCodes: [3,2,5],
   claimDetail: {
     specialty: "56 - Nurse",
     provider: "Pat Smear",
