@@ -4,7 +4,7 @@ Nucleus.Claim.FIXTURES = [
   claimSeq: '2234786125-0',
   hasDocuments: 0,
   isLocked: 0,
-  lines: [],
+  claimLines: [1,2],
   clientDetails: [1, 2, 3, 4, 5],
   dxCodes: [1,2],
   claimDetail: {
@@ -19,7 +19,7 @@ Nucleus.Claim.FIXTURES = [
   claimSeq: '324329989-5',
   hasDocuments: 1,
   isLocked: 1,
-  lines: [4,5],
+  claimLines: [4,5],
   clientDetails: [6, 7, 8, 9, 10],
   dxCodes: [],
   claimDetail: {
@@ -34,7 +34,7 @@ Nucleus.Claim.FIXTURES = [
   claimSeq: '655342112-2',
   hasDocuments: 1,
   isLocked: 0,
-  lines: [],
+  claimLines: [3,6,8],
   clientDetails: [11, 12, 13, 14, 15],
   dxCodes: [1,2,3],
   claimDetail: {
@@ -49,7 +49,7 @@ Nucleus.Claim.FIXTURES = [
   claimSeq: '738427483-0',
   hasDocuments: 0,
   isLocked: 1,
-  lines: [],
+  claimLines: [7],
   clientDetails: [16,17,18,19,20],
   dxCodes: [4,5,6],
   claimDetail: {
@@ -64,7 +64,7 @@ Nucleus.Claim.FIXTURES = [
   claimSeq: '745326283-2',
   hasDocuments: 1,
   isLocked: 0,
-  lines: [],
+  claimLines: [9,10],
   clientDetails: [21,22,23,24,25],
   dxCodes: [3,2,5],
   claimDetail: {

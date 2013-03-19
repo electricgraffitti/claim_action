@@ -1,41 +1,55 @@
 Nucleus.Flag.FIXTURES = [{
   id: 1,
-  line: 3,
-  description: 'ROOT CANAL THERAPY, COMPLETE',
-  dos: '03/12/2012',
-  triggerCode: 'D0460',
-  triggerClaim: '7415590-0',
-  triggerSpec: 'DD'
+  flagName: 'ADM',
+  description: 'Services Within Discharge Time Frame'
 }, {
   id: 2,
-  line: 5,
-  description: 'ROOT CANAL THERAPY, COMPLETE',
-  dos: '03/12/2012',
-  triggerCode: 'D0460',
-  triggerClaim: '7415590-0',
-  triggerSpec: 'DD'
+  flagName: 'AMAX',
+  description: 'Administrative Bilateral'
 }, {
   id: 3,
-  line: 2,
-  description: 'ROOT CANAL THERAPY, COMPLETE',
-  dos: '03/12/2012',
-  triggerCode: 'D0460',
-  triggerClaim: '7415590-0',
-  triggerSpec: 'DD'
+  flagName: 'FPR',
+  description: 'Record Review Required for Provider'
 }, {
   id: 4,
-  line: 2,
-  description: 'ROOT CANAL THERAPY, COMPLETE',
-  dos: '03/12/2012',
-  triggerCode: 'D0460',
-  triggerClaim: '7415590-0',
-  triggerSpec: 'DD'
+  flagName: 'GEN',
+  description: 'Procedure Not Typical for Patients Gender'
 }, {
-  id: 5,
-  line: 3,
-  description: 'ROOT CANAL THERAPY, COMPLETE',
-  dos: '03/12/2012',
-  triggerCode: 'D0460',
-  triggerClaim: '7415590-0',
-  triggerSpec: 'DD'
-}];
+  id: 6,
+  flagName: 'NICU',
+  description: 'Discharged from NICU to Home'
+}, {
+  id: 7,
+  flagName: 'MSM',
+  description: 'Multiple Surgeon Modifier'
+}, {
+  id: 8,
+  flagName: 'MTC',
+  description: 'Technical Modifier Inappropriate'
+}, {
+  id: 9,
+  flagName: 'LOC',
+  description: 'Billed Less Than DRG'
+}, {
+  id: 10,
+  flagName: 'LCD',
+  description: 'Local Carrier Determination'
+}, {
+  id: 11,
+  flagName: 'INVD',
+  description: 'Invalid Diagnosis Codes'
+}, {
+  id: 12,
+  flagName: 'IFR',
+  description: 'Imaging Families Reduction'
+}, {
+  id: 13,
+  flagName: 'CP6A',
+  description: '2nd Bridge abutment'
+}, {
+  id: 14,
+  flagName: 'UNB',
+  description: 'Unbundling'
+}
+
+];

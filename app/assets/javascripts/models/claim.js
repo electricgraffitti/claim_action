@@ -7,7 +7,7 @@ Nucleus.Claim = DS.Model.extend({
 	// Associations
 	clientDetails: DS.hasMany('Nucleus.ClientDetail'),
 	dxCodes: DS.hasMany('Nucleus.DxCode'),
-	lines: DS.hasMany('Nucleus.Line'),
+	claimLines: DS.hasMany('Nucleus.Line'),
 
 	// Properties 
 	metaTitle: "Claim Details",

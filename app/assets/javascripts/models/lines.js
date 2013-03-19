@@ -3,8 +3,5 @@ Nucleus.Line = DS.Model.extend({
 	units: DS.attr('string'),
 	dos: DS.attr('date'),
 	
-	line: DS.belongsTo('Nucleus.Claim'),
-	flags: DS.hasMany('Nucleus.Flags'),
-
-	metaTitle: "Claim Lines"
+	lineFlags: DS.hasMany('Nucleus.LineFlag')
 });
