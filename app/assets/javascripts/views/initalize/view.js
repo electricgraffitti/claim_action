@@ -1,0 +1,1 @@
+Nucleus.View = Ember.View.extend(Nucleus.Presence, {});

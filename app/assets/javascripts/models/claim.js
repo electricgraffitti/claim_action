@@ -2,6 +2,7 @@ Nucleus.Claim = DS.Model.extend({
 	claimSeq: DS.attr('string'),
 	hasDocuments: DS.attr('boolean'),
 	isLocked: DS.attr('boolean'),
+	hasFlags: DS.attr('boolean'),
 	claimDetail: DS.attr('object'),
 	
 	// Associations

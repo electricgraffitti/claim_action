@@ -5,7 +5,10 @@
 		<li class="button">Appeals</li>
 		<li class="button">Logics</li>
 	</ul>
-	{{ view Nucleus.ViewButtonView id="view_tools" }}
+	<ul id="view_tools" class="tool_segment">
+		<li class="button">L</li>
+		{{#view Nucleus.FlagManagerButtonView }} {{ view.buttonText }} {{/view}}
+	</ul>
 	<ul id="sub_tools" class="tool_segment">
 		<li class="button">A</li>
 		<li class="button">D</li>
