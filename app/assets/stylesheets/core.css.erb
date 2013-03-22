@@ -119,11 +119,33 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c6c6',endCo
 background:linear-gradient(top,#c6c6c6 1%,#ededed 100%);/* W3C */}
 a.button_link:hover{color:#444;outline:1px solid #9c9c9c;border:1px solid #fff;}
 
+.red_button, .tool_segment .red_button {color:#fff; text-shadow:none; background:#a80303;/* Old browsers */
+background:-moz-linear-gradient(top,#a80303 0%,#7c0000 100%);/* FF3.6+ */
+background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#a80303),color-stop(100%,#7c0000));/* Chrome,Safari4+ */
+background:-webkit-linear-gradient(top,#a80303 0%,#7c0000 100%);/* Chrome10+,Safari5.1+ */
+background:-o-linear-gradient(top,#a80303 0%,#7c0000 100%);/* Opera 11.10+ */
+background:-ms-linear-gradient(top,#a80303 0%,#7c0000 100%);/* IE10+ */
+background:linear-gradient(top,#a80303 0%,#7c0000 100%);/* W3C */
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80303',endColorstr='#7c0000',GradientType=0 );/* IE6-9 */
+border:1px solid #590000;text-shadow:1px 1px 0px #590000;}
+.red_button:hover, .tool_segment .red_button:hover {background:#cf0404;/* Old browsers */
+background:-moz-linear-gradient(top,#cf0404 0%,#ff3019 100%);/* FF3.6+ */
+background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#cf0404),color-stop(100%,#ff3019));/* Chrome,Safari4+ */
+background:-webkit-linear-gradient(top,#cf0404 0%,#ff3019 100%);/* Chrome10+,Safari5.1+ */
+background:-o-linear-gradient(top,#cf0404 0%,#ff3019 100%);/* Opera11.10+ */
+background:-ms-linear-gradient(top,#cf0404 0%,#ff3019 100%);/* IE10+ */
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404',endColorstr='#ff3019',GradientType=0 );/* IE6-9 */
+background:linear-gradient(top,#cf0404 0%,#ff3019 100%);/* W3C */}
+.webkit .red_button:before, .gecko .red_button:before{position:absolute;display:block;top:0px;left:0px;border-left:1px solid #b20101;border-top:1px solid #bc0505;content:'';width:99.9%;height:99.9%;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+
+
 /* Icons */
 .icon {background: url(<%= asset_path 'nucleus_icon_sprite.png' %>) no-repeat; display:block;}
 .small_icon {width: 20px; height: 20px; padding: 0px; float: left; border: none;}
 .icon.lock {background-position: 0px -298px;}
+.active .icon.lock {background-position: 0px -321px;}
 .icon.documents {background-position: 0px -431px;}
+.active .icon.documents {background-position: 0px -450px;}
 .icon.quick_delete {background-position: -32px -785px;}
 
 
@@ -147,13 +169,15 @@ a.button_link:hover{color:#444;outline:1px solid #9c9c9c;border:1px solid #fff;}
 .tool_segment {margin: 5px 17px 5px 10px;}
 .tool_segment li {padding: 5px 5px;font-weight: 700;text-shadow: 0px 1px 0px white;font-size: 16px;min-width: 23px;height: 18px;text-align: center;}
 .tool_bar a {display: inline-block; padding: 6px 10px 5px; float: right;}
+.widget_tool_bar .tool_segment {margin: 2px 10px 1px;float: right;}
+.widget_tool_bar .tool_segment li {font-size: 12px; height:12px; min-width: 12px;}
 #settings_tools {float:right; margin-right: 10px;}
 #notification {padding: 10px; display: none;}
 #notification.error {background: #CF0000; color: #fff;}
 
 /* Sidebar */
 #sidebar {position: relative; float: left; width: 240px; background: #efefef; height: 100%; border-right: 1px solid #ccc;}
-.sidebar_item.active {background: #398DCC; color:#fff;}
+#results .active li.sidebar_item {background: #398DCC; color:#fff;}
 #search_top {background: #fff; border-bottom: 1px solid #ccc; height: 68px; padding: 10px 10px;}
 #results {overflow-y: scroll; overflow-x: hidden; clear: both;}
 #results li.sidebar_item {position: relative; width: 100%; padding: 10px 10px; border-top: 1px solid #fff; border-bottom: 1px solid #ccc;}

@@ -3,7 +3,8 @@ Nucleus.Claim = DS.Model.extend({
 	hasDocuments: DS.attr('boolean'),
 	isLocked: DS.attr('boolean'),
 	claimDetail: DS.attr('object'),
-	
+	hasFlags: DS.attr('boolean'),
+	hasLogics: DS.attr('boolean'),
 	// Associations
 	clientDetails: DS.hasMany('Nucleus.ClientDetail'),
 	dxCodes: DS.hasMany('Nucleus.DxCode'),

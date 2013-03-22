@@ -1,6 +1,10 @@
 Nucleus.ClaimsRoute = Ember.Route.extend({
   model: function() {
     return Nucleus.Claim.find();
+  },
+
+ goToNextClaim: function(claim) {
+    this.transitionTo('claim', claim);
   }
 });
 

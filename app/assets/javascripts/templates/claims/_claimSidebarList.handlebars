@@ -1,14 +1,15 @@
 {{#each claim in controller }}
-	<li class="sidebar_item full_box">
-		<span>{{#linkTo 'claim' claim}}{{ claim.claimSeq }}{{/linkTo}}
-		</span>
-		<ul class="actions">
-			{{#if claim.hasDocuments }}
-				<li class="icon small_icon documents"></li>
-			{{/if}}
-			{{#if claim.isLocked }}
-				<li class="icon small_icon lock"></li>
-			{{/if}}
-		</ul>
-	</li>
+	{{#linkTo 'claim' claim }}
+		<li class="sidebar_item full_box">
+			<span>{{ claim.claimSeq }}</span>
+			<ul class="actions">
+				{{#if claim.hasDocuments }}
+					<li class="icon small_icon documents"></li>
+				{{/if}}
+				{{#if claim.isLocked }}
+					<li class="icon small_icon lock"></li>
+				{{/if}}
+			</ul>
+		</li>
+	{{/linkTo}}
 {{/each}}
