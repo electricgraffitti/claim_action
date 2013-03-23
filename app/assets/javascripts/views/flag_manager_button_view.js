@@ -1,10 +1,10 @@
 Nucleus.FlagManagerButtonView = Ember.View.extend({
 	template: Ember.Handlebars.compile('F'),
-	classNames: ['button'],
+	classNames: ['icon', 'small_icon', 'flag'],
 	tagName: 'button',
 	
 	click: function(e) {
-		alert('A section to filter flags/hide flags for this section was inserted.');
+		this.get('controller').triggerSubSystems('flag_tools'); 
 	}
 
 });

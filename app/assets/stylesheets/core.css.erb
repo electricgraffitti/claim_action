@@ -15,7 +15,7 @@ body{min-width:1024px;font:13px/1.231 sans-serif;font-size:small}
 select,input,textarea,button{font:99% sans-serif;padding:2px 1px 3px}
 pre,code,kbd,samp{font-family:monospace,sans-serif}
 body,select,input,textarea{color:#444}
-a, a:visited{color:#398DCC}
+a, a:visited{color:#0076a9}
 a:hover{color:#F47727}
 ol{margin-left:1.8em;list-style-type:decimal}
 small{font-size:85%}
@@ -73,7 +73,7 @@ h6{font-size:110%;font-weight:bold;color:#000;margin-top:5px;margin-bottom:10px;
 .nucleus_red{color:#D93B27}
 .nucleus_orange{color:#F47727}
 .nucleus_yellow{color:#F7B219}
-.nucleus_blue{color:#398DCC}
+.nucleus_blue{color:#0076a9}
 .header_footer_color {background:#0076a9;}
 .rich_text_editor .cke_skin_kama .cke_top,
 .silver_gradient{background:#f3f3f3;/* Old browsers */
@@ -142,11 +142,16 @@ background:linear-gradient(top,#cf0404 0%,#ff3019 100%);/* W3C */}
 .icon {background: url(<%= asset_path 'nucleus-sprite.png' %>) no-repeat; display:block;}
 .small_icon {width: 20px; height: 20px; padding: 0px; float: left; border: none;}
 .toolbar_icon {text-indent: -9999em; width: 35px; height: 24px;position: relative;float: left;margin:0px; padding: 0px; border: none;}
+.widget_tool_bar .icon {text-indent: -9999em;width: 28px;height: 24px;border-left: 1px solid #BBB;border-right: 1px solid #EEE;}
 .icon.lock {background-position: 3px -101px;}
 .active .icon.lock {background-position: 3px -61px;}
-.icon.documents {background-position: -17px -101px;}
-.active .icon.documents {background-position: -17px -81px;}
+.icon.documents {background-position: -17px -98px;}
 .icon.quick_delete {background-position: -3px -242px;}
+.icon.transfer {background-position: -57px -178px;}
+.icon.flag {background-position: -56px -98px;}
+.icon.notes {background-position: -17px -178px;}
+.icon.logics {background-position: 4px -318px;}
+
 
 .toolbar_icon.settings {background-position: -464px -89px;}
 .toolbar_icon.help {background-position: -463px -51px;}
@@ -182,7 +187,7 @@ background:linear-gradient(top,#cf0404 0%,#ff3019 100%);/* W3C */}
 
 /* Sidebar */
 #sidebar {position: relative; float: left; width: 240px; background: #efefef; height: 100%; border-right: 1px solid #ccc;}
-#results .active li.sidebar_item {background: #398DCC; color:#fff;}
+#results .active li.sidebar_item {background: #0076a9; color:#fff;}
 #search_top {background: #fff; border-bottom: 1px solid #ccc; height: 68px; padding: 10px 10px;}
 #results {overflow-y: scroll; overflow-x: hidden; clear: both;}
 #results li.sidebar_item {position: relative; width: 100%; padding: 10px 10px; border-top: 1px solid #fff; border-bottom: 1px solid #ccc;}
@@ -233,7 +238,7 @@ background:linear-gradient(top,#cf0404 0%,#ff3019 100%);/* W3C */}
 
 /* Flags */
 .flag_items {background: #fff; float:right; width: 100%; padding-left: 20px;}
-.flag_item {border-left: 1px solid #CCC;border-top: 1px solid #fff; border-bottom: 1px solid #F7E1BA;float: left;background: #FEF1D4;width: 100%;padding: 5px 0px 0px 5px;}
+.flag_item {border-left: 1px solid #CCC;border-top: 1px solid #fff; border-bottom: 1px solid #F7E1BA;float: left;background: #FEF1D4;width: 100%;padding: 5px 0px 0px 0px;}
 .flag_item:nth-of-type(2n+1){background: #FEE2A5; border-bottom: 1px solid #F5C874;}
 
 /* Patient Claim HX */

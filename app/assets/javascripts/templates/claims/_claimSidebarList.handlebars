@@ -3,9 +3,6 @@
 		<li class="sidebar_item full_box">
 			<span>{{ claim.claimSeq }}</span>
 			<ul class="actions">
-				{{#if claim.hasDocuments }}
-					<li class="icon small_icon documents"></li>
-				{{/if}}
 				{{#if claim.isLocked }}
 					<li class="icon small_icon lock"></li>
 				{{/if}}

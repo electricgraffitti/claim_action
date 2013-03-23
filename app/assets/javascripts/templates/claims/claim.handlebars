@@ -3,5 +3,5 @@
 </div>
 <div id="data_list_views" class="full_box">
 	{{ partial 'claims/lines/lines' }}
-	{{ partial 'claims/claim_history/index'}}
+	{{view Nucleus.SubSystemView subSystemChildViewBinding="Nucleus.SubSystemController.subSystemChildView"}}
 </div>

@@ -30,13 +30,21 @@ Nucleus.ClaimsController = Ember.ArrayController.extend({
 });
 
 Nucleus.ClaimController = Ember.ObjectController.extend({
-	needs: ['claims'],
+	needs: ['claims', 'subSystems', 'subSystem'],
 
 	triggerNextClaim: function() {
 		var claimsController = this.get("controllers.claims");
 		claimsController.set('currentClaim', this);
 		claimsController.next();
-	}
+	},
+
+  triggerSubSystems: function (subSystem) {
+    var subSystemController = this.get("controllers.subSystem"),
+        subSystemsController = this.get("controllers.subSystems"),
+        subSystemView = subSystemsController.findProperty('name', subSystem);
+    
+    subSystemController.set('subSystemChildView', subSystemView);
+  }
 
 });
 
