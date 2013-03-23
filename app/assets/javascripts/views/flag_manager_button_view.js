@@ -4,7 +4,7 @@ Nucleus.FlagManagerButtonView = Ember.View.extend({
 	tagName: 'button',
 	
 	click: function(e) {
-		alert('flag manager');
+		alert('A section to filter flags/hide flags for this section was inserted.');
 	}
 
 });

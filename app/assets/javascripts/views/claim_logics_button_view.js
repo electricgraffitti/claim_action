@@ -4,7 +4,7 @@ Nucleus.ClaimLogicsButtonView = Ember.View.extend({
 	tagName: 'button',
 	
 	click: function(e) {
-		alert('logics manager');
+		alert('We just made an AJAX call for this Claims Logics');
 	}
 
 });
