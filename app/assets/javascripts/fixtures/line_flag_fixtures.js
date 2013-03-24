@@ -8,7 +8,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'
 	},
 	{
 		id: 2,
@@ -19,7 +25,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  		
 	},
 	{
 		id: 3,
@@ -30,7 +42,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  		
 	},
 	{
 		id: 4,
@@ -41,7 +59,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  	
 	},
 	{
 		id: 5,
@@ -52,7 +76,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  		
 	},
 	{
 		id: 6,
@@ -63,7 +93,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'	
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  		
 	},
 	{
 		id: 7,
@@ -74,7 +110,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  			
 	},
 	{
 		id: 8,
@@ -85,7 +127,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'	
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  	
 	},
 	{
 		id: 9,
@@ -96,7 +144,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  	
 	},
 	{
 		id: 10,
@@ -107,7 +161,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  		
 	},
 	{
 		id: 11,
@@ -118,7 +178,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  			
 	},
 	{
 		id: 12,
@@ -129,7 +195,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  			
 	},
 	{
 		id: 13,
@@ -140,7 +212,13 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  			
 	},
 	{
 		id: 14,
@@ -151,6 +229,12 @@ Nucleus.LineFlag.FIXTURES = [
 		dos: '03/12/2012',
   	triggerCode: 'D0460',
   	triggerClaim: '7415590-0',
-  	triggerSpec: 'DD'		
+  	triggerSpec: 'DD',
+  	source: 'H/C',
+	  trigMod: 'ABC',
+	  trigLine: '1',
+	  trigProvider: 'C KIP BEALS DDS',
+	  trigDx: '0.380',
+	  trigAdj: '$67.00'  			
 	}													
 ]; 

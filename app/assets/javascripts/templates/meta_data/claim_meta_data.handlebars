@@ -1,0 +1,12 @@
+<div class="content_heading silver_gradient">{{ metaTitle }}<span class="heading_details">{{ secondary }}</span></div>
+<div class="detail_view">
+	<div id="claim_details">
+		{{ partial 'claims/claimMeta' }}
+		{{ partial 'claims/clientMeta' }}
+	</div>
+</div>
+{{#if dxCodes }}
+	<div class="detail_view">
+		{{ partial 'dx_codes/dxCodesMetaList' }}	
+	</div>
+{{/if}}

@@ -4,7 +4,7 @@ Nucleus.DetailView = Ember.View.extend({
 	tagName: 'button',
 	
 	click: function(e) {
-		alert(this.get('content'));
+		this.get('controller').loadMetaDetails(this.get('content'));
 	}
 
 });
