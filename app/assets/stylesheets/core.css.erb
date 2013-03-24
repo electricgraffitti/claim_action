@@ -10,7 +10,6 @@ mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}
 del{text-decoration:line-through}
 abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 body{min-width:1024px;font:13px/1.231 sans-serif;font-size:small}
 select,input,textarea,button{font:99% sans-serif;padding:2px 1px 3px}
 pre,code,kbd,samp{font-family:monospace,sans-serif}
@@ -66,6 +65,7 @@ h6{font-size:110%;font-weight:bold;color:#000;margin-top:5px;margin-bottom:10px;
 .small_text{font-size:77%;}
 .data_label{line-height:18px;}
 .data_value{font-size:12px;color:#333;font-weight:700;}
+.heading {font-weight: 700; padding: 0px 0px 5px; color: #0076a9; font-size: 14px;}
 
 /**********************************************************************************************************************************************************/
 /************************************************************************************************************************** COLORS ************************/
@@ -108,7 +108,7 @@ outline:1px solid #9c9c9c;border:1px solid #fff;padding:2px 9px 2px;height:24px;
 .button_link{padding:5px 9px 0px;height:22px;color:#444;}
 
 .button:active,.button:visited, a.button_link:active,a.button_link:visited{border:1px solid #ddd;color:#444;}
-.button_link.active, .button.active{background: rgb(255,255,255); /* Old browsers */
+.button_link.active, .button_link:hover, .button.active, .button:hover {background: rgb(255,255,255); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -162,6 +162,7 @@ background:linear-gradient(top,#cf0404 0%,#ff3019 100%);/* W3C */}
 #nucleus {min-width: 1280px; overflow:hidden; position: relative;}
 .full_section {position: relative; float: left; width: 100%;}
 .full_box {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+hr {margin: 0px; border: none; padding-top: 10px; border-bottom: 1px solid #ccc; margin-bottom: 10px; clear:both;}
 
 /* Header */
 #header {padding: 0px 10px; color:#fff;}
@@ -221,28 +222,22 @@ background:linear-gradient(top,#cf0404 0%,#ff3019 100%);/* W3C */}
 .view_segment {position: relative; float: left; width: 50%; height: 100%;overflow-x:hidden;overflow-y:auto;}
 #data_list_views .view_segment:first-of-type {border-right: 1px solid #ccc;}
 
-/* Dx Codes */
-#dx_codes ul li:first-of-type {position:relative;  width: 80px;}
-#dx_codes ul li:nth-of-type(2) {position:relative; width: 296px; overflow: hidden; white-space: nowrap;}
 
-/* Lines */
-.line_items li.line_item {padding: 5px 0px 0px 0px; border-top: 1px solid #eee; border-bottom: 1px solid #aaa; float: left; width: 100%; background: #f3f3f3;}
-.line_items li.line_item:first-of-type {border-top: none;}
-.line_items li.line_item:nth-of-type(2n+1) {background: #E3E3E3;}
-.item_actions {padding-left: 5px;}
-.item_title {font-weight: 700;width: 230px;float: left;padding: 0px; margin-right: 10px; height: 20px;white-space: nowrap;overflow: hidden;}
-.no_icon .item_title, .no_icon .item_details {padding-left: 10px;}
-.item_meta .item_title {white-space: nowrap;overflow: hidden;}
-.item_details {float:left; padding: 0px 0px 5px 25px;}
-.item_detail {float: left; margin-right: 20px;}
+/* Forms */
+.field {position: relative; float: left; width: 50%; box-sizing: border-box; padding: 0px 10px 10px 0px;}
+.field.full_field {width: 100%;}
+.field label {width: 100%;display: block; padding: 0px 0px 5px 0px;}
+.field textarea {width: 100%;}
+.inline_field, .inline_field label, .inline_field input {position: relative;float: left;}
+.inline_field {padding: 0px 10px 5px 0px;}
+.inline_field label {display: inline;padding-left: 5px;float: right; width: auto;}
+.inline_field input {padding-top: 2px;}
 
-/* Flags */
-.flag_items {background: #fff; float:right; width: 100%; padding-left: 20px;}
-.flag_item {border-left: 1px solid #CCC;border-top: 1px solid #fff; border-bottom: 1px solid #F7E1BA;float: left;background: #FEF1D4;width: 100%;padding: 5px 0px 0px 0px;}
-.flag_item:nth-of-type(2n+1){background: #FEE2A5; border-bottom: 1px solid #F5C874;}
 
-/* Patient Claim HX */
-.inline_input_group span {display: block; float: left; padding: 5px 10px;}
+
+/* Grid */
+.grid {clear: both; width: 100%; box-sizing: border-box; border: 1px solid #ccc;}
+.grid ul {width: 100%;}
 
 /* Selects */
 .select_wrap{margin-bottom:0px;width:175px;margin-right:5px;}
@@ -287,5 +282,35 @@ option:hover{background:#d3d3d3;color:#000;}
 .search_actions span,.search_actions a{display:block;padding:3px 0px 0px 7px;}
 
 /* Footer */
-#footer {color: #c3c4c3; padding: 5px 20px 0px; font-size: 11px; height: 23px;}  
+#footer {color: #c3c4c3; padding: 5px 20px 0px; font-size: 11px; height: 23px;}
+
+
+/************ PAGE SPECIFIC ****************/
+
+
+/* Dx Codes */
+#dx_codes ul li:first-of-type {position:relative;  width: 80px;}
+#dx_codes ul li:nth-of-type(2) {position:relative; width: 296px; overflow: hidden; white-space: nowrap;}
+
+/* Lines */
+.line_items li.line_item {padding: 5px 0px 0px 0px; border-top: 1px solid #eee; border-bottom: 1px solid #aaa; float: left; width: 100%; background: #f3f3f3;}
+.line_items li.line_item:first-of-type {border-top: none;}
+.line_items li.line_item:nth-of-type(2n+1) {background: #E3E3E3;}
+.item_actions {padding-left: 5px;}
+.item_title {font-weight: 700;width: 230px;float: left;padding: 0px; margin-right: 10px; height: 20px;white-space: nowrap;overflow: hidden;}
+.no_icon .item_title, .no_icon .item_details {padding-left: 10px;}
+.item_meta .item_title {white-space: nowrap;overflow: hidden;}
+.item_details {float:left; padding: 0px 0px 5px 25px;}
+.item_detail {float: left; margin-right: 20px;}
+
+/* Flags */
+.flag_items {background: #fff; float:right; width: 100%; padding-left: 20px;}
+.flag_item {border-left: 1px solid #CCC;border-top: 1px solid #fff; border-bottom: 1px solid #F7E1BA;float: left;background: #FEF1D4;width: 100%;padding: 5px 0px 0px 0px;}
+.flag_item:nth-of-type(2n+1){background: #FEE2A5; border-bottom: 1px solid #F5C874;}
+
+/* Patient Claim HX */
+.inline_input_group span {display: block; float: left; padding: 5px 10px;}
+
+/* Documents */
+#documents .grid {min-height: 360px;}
 

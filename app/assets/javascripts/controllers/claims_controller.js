@@ -30,7 +30,20 @@ Nucleus.ClaimsController = Ember.ArrayController.extend({
 });
 
 Nucleus.ClaimController = Ember.ObjectController.extend({
-	needs: ['claims', 'subSystems', 'subSystem'],
+	needs: ['claims', 'subSystems'],
+  subSystemChildView: null,
+  defaultSubSystemView: 'documents',
+
+  init: function() {
+    this.setDefaultSubSystemView();
+  },
+
+  setDefaultSubSystemView: function () {
+    var subSystemsController = this.get("controllers.subSystems"),
+        subSystemView = subSystemsController.findProperty('name', this.get('defaultSubSystemView'));
+
+    this.set('subSystemChildView', subSystemView.get('subSystemView'));
+  },
 
 	triggerNextClaim: function() {
 		var claimsController = this.get("controllers.claims");
@@ -39,11 +52,9 @@ Nucleus.ClaimController = Ember.ObjectController.extend({
 	},
 
   triggerSubSystems: function (subSystem) {
-    var subSystemController = this.get("controllers.subSystem"),
-        subSystemsController = this.get("controllers.subSystems"),
-        subSystemView = subSystemsController.findProperty('name', subSystem);
-    
-    subSystemController.set('subSystemChildView', subSystemView);
+    var view = Ember.View.create({templateName: "sub_systems/" + subSystem});
+
+    this.set('subSystemChildView', view);
   }
 
 });

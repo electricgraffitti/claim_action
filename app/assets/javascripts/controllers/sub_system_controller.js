@@ -1,7 +1,3 @@
-Nucleus.SubSystemController = Ember.Object.extend({
-  subSystemChildView: null
-});
-
 var subSystems = [
   Nucleus.SubSystem.create({ name: 'logics' }),
   Nucleus.SubSystem.create({ name: 'notes' }),
