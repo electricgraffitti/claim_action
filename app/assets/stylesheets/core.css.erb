@@ -140,7 +140,7 @@ background:linear-gradient(top,#cf0404 0%,#ff3019 100%);/* W3C */}
 
 /* Icons */
 .icon {background: url(<%= asset_path 'nucleus-sprite.png' %>) no-repeat; display:block;}
-.small_icon {width: 20px; height: 20px; padding: 0px; float: left; border: none;}
+.small_icon {width: 20px; height: 20px; padding: 0px; float: left; border: none; text-indent: -9999em;}
 .toolbar_icon {text-indent: -9999em; width: 35px; height: 24px;position: relative;float: left;margin:0px; padding: 0px; border: none;}
 .widget_tool_bar .icon {text-indent: -9999em;width: 28px;height: 24px;border-left: 1px solid #BBB;border-right: 1px solid #EEE;}
 .icon.lock {background-position: 3px -101px;}
@@ -151,7 +151,10 @@ background:linear-gradient(top,#cf0404 0%,#ff3019 100%);/* W3C */}
 .icon.flag {background-position: -56px -98px;}
 .icon.notes {background-position: -17px -178px;}
 .icon.logics {background-position: 4px -318px;}
+.icon.details {background-position: -58px -120px;}
+.active .icon.details {background-position: -58px -141px;}
 
+#data_list_views .icon.details {float: right;margin-right: 10px;margin-top: -3px;}
 
 .toolbar_icon.settings {background-position: -464px -89px;}
 .toolbar_icon.help {background-position: -463px -51px;}

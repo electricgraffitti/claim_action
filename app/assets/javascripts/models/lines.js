@@ -3,5 +3,6 @@ Nucleus.Line = DS.Model.extend({
 	units: DS.attr('string'),
 	dos: DS.attr('date'),
 	
-	lineFlags: DS.hasMany('Nucleus.LineFlag')
+	lineFlags: DS.hasMany('Nucleus.LineFlag'),
+	detailView: 'claims/lines/line_detail'
 });

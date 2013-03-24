@@ -5,7 +5,8 @@
 		</div>
 		<span class="item_title">{{ upcase line.description }}</span>
 		<span class="item_detail">Units: {{ line.units }}</span>
-		<span class="item_detail">DOS: {{ line.dos }}</span>		
+		<span class="item_detail">DOS: {{ line.dos }}</span>
+		{{ view Nucleus.DetailView contentBinding="line"}}	
 	</li>
 	{{#if line.lineFlags }}
 		<ul class="flag_items full_box clear">
