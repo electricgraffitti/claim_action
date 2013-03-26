@@ -35,7 +35,7 @@ Nucleus.ClaimController = Ember.ObjectController.extend({
   metaDataChildView: null,
   metaDataObject: null,
   defaultMetaDataView: 'meta_data/claim_meta_data',
-  defaultSubSystemView: 'documents',
+  defaultSubSystemView: 'patient_claim_history',
 
   init: function() {
     this.setDefaultSubSystemView();

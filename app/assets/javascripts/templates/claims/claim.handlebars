@@ -1,5 +1,10 @@
-{{ view Nucleus.MetaDataView id="meta_data" contentBinding="Nucleus.ClaimController.metaDataChildView" }}
-<div id="data_list_views" class="full_box">
-	{{ partial 'claims/lines/lines' }}
-	{{view Nucleus.SubSystemView contentBinding="Nucleus.ClaimController.subSystemChildView"}}
+<div id="data_views">
+	{{ view Nucleus.MetaDataView id="meta_data" contentBinding="Nucleus.ClaimController.metaDataChildView" }}
+	<div id="data_list_views" class="full_box">
+		{{ partial 'claims/lines/lines' }}
+		{{view Nucleus.SubSystemView contentBinding="Nucleus.ClaimController.subSystemChildView"}}
+	</div>	
+</div>
+<div id="sidebar" class="full_box">
+	{{ partial "claims/item_lists" }}
 </div>

@@ -8,7 +8,7 @@ Nucleus.Claim.FIXTURES = [
   hasLogics: 0,
   claimLines: [1,2],
   clientDetails: [1, 2, 3, 4, 5],
-  dxCodes: [1,2],
+  dxCodes: [1,2,3,4,5,6,7,8,9],
   claimDetail: {
     specialty: "54 - Dietrician",
     provider: "Jack James",
