@@ -14,4 +14,4 @@ end
 gem 'jquery-rails'
 gem 'ember-rails'
 
-# ruby '2.0.0'
+ruby '2.0.0'
