@@ -1,0 +1,39 @@
+<div id="documents">
+	<div class="content_heading silver_gradient">Documents</div>
+	<div class="segment_contents">
+		<div class="segment">
+			<header class="heading">Add A Document</header>
+			<div class="field">
+				<input id="file-upload" type="file" />
+			</div>
+			<div class="field">
+				<label>Description</label>
+				{{view Ember.TextArea }}
+			</div>
+			<div class="field full_field">
+				<label>Document Type</label>
+				{{#times 12}}
+				<div class="inline_field">
+					<label>Claim Summary</label>
+					{{view Ember.Checkbox checkedBinding="receiveEmail"}}
+				</div>
+				{{/times}}
+			</div>
+			<div class="field full_field">
+				<button class="button">Upload Document</button>
+			</div>		
+		</div>
+		<hr>
+		<div class="segment">
+			<header class="heading">Uploaded Documents</header>
+			<div class="grid">
+				<ul class="data_heading black_gradient">
+					<li class="data_cell_head">File</li>
+					<li class="data_cell_head">Description</li>
+					<li class="data_cell_head">Doc Type</li>
+					<li class="data_cell_head">Date</li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+</div>

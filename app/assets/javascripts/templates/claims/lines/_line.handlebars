@@ -1,0 +1,16 @@
+{{#each line in claimLines }}
+	<li class="line_item full_box">
+		<div class="item_actions">
+			<span class="icon small_icon quick_delete"></span>
+		</div>
+		<span class="item_title">{{ upcase line.description }}</span>
+		<span class="item_detail">Units: {{ line.units }}</span>
+		<span class="item_detail">DOS: {{ line.dos }}</span>
+		{{ view Nucleus.DetailView contentBinding="line"}}	
+	</li>
+	{{#if line.lineFlags }}
+		<ul class="flag_items full_box clear">
+			{{ partial 'claims/flags/line_flags' }}
+		</ul>
+	{{/if}}
+{{/each}}

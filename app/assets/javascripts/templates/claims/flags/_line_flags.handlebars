@@ -1,0 +1,18 @@
+{{#each lineFlag in line.lineFlags }}
+	<li class="flag_item full_box">
+		<div class="item_actions">
+			<span class="icon small_icon quick_delete"></span>
+		</div>
+		<ul class="item_meta">
+			<li class="item_title">{{ upcase lineFlag.flag.description }}</li>
+			<li class="item_detail nucleus_red bold">{{ lineFlag.flag.flagName }}</li>
+		</ul>
+		<ul class="item_details">
+			<li class="item_detail">{{ lineFlag.dos }}</li>
+			<li class="item_detail"><a href="">{{ lineFlag.triggerCode }}</a></li>
+			<li class="item_detail"><a href="">{{ lineFlag.triggerClaim }}</a></li>
+			<li class="item_detail">{{ lineFlag.triggerSpec }}</li>
+		</ul>
+		{{ view Nucleus.DetailView contentBinding="lineFlag"}}	
+	</li>
+{{/each }}

@@ -1,0 +1,23 @@
+<div id="transfer_claim">
+	<div class="content_heading silver_gradient">Transfer Claim</div>
+	<div class="segment_contents">
+		<div class="field">
+			<label>Transfer Status</label>
+			{{view Ember.Select prompt="Select Transfer Status" class="select"}}
+		</div>
+		<div class="field">
+			<label>Assigned To</label>
+			{{view Ember.Select prompt="Assign Claim" class="select"}}
+		</div>
+		<div class="field full_field">
+			<label>Notes</label>
+			{{view Ember.TextArea }}
+		</div>
+		<div class="field .button_link.active">
+			<button class="button">Transfer Claim</button>
+		</div>
+		<div class="field full_field">
+			<button class="button">Transfer Approve Claim</button>
+		</div>	
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div id="content" class="full_section">
+	<div id="master_tool_bar" class="full_section silver_gradient full_box">
+	<ul id="master_tools" class="tool_segment">
+		<li>{{#linkTo 'claims' class="button_link"}}Claims{{/linkTo}}</li>
+		<li>{{#linkTo 'index' class="button_link"}}Appeals{{/linkTo}}</li>
+		<li>{{#linkTo 'index' class="button_link"}}Logics{{/linkTo}}</li>
+	</ul>
+	
+	<ul id="settings_tools" class="tool_segment">
+		<button class="icon toolbar_icon settings">Settings</button>
+		<button class="icon toolbar_icon help">Help Center</button>
+		<button class="icon toolbar_icon logout">Logout</button>
+	</ul>						
+</div>
+<div id="stage" class="full_section">
+	{{ outlet }}
+</div>

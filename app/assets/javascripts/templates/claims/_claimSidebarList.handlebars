@@ -1,0 +1,13 @@
+{{#each claim in controller }}
+	{{#linkTo 'claim' claim }}
+		<li class="sidebar_item full_box">
+			<span>{{ claim.claimSeq }}</span>
+			<ul class="actions">
+				{{#if claim.isLocked }}
+					<li class="icon small_icon lock"></li>
+				{{/if}}
+				<li class="icon small_icon details"></li>
+			</ul>
+		</li>
+	{{/linkTo}}
+{{/each}}

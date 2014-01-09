@@ -1,0 +1,24 @@
+<div class="view_segment full_box">
+	<div class="content_heading silver_gradient">Claim Lines</div>
+	<div class="segment_contents">
+		<div class="tool_bar widget_tool_bar full_section full_box">
+			<ul id="approve_tools" class="tool_segment">
+				{{ view Nucleus.ApproveClaimButtonView context="claim" target="controller" action="next" }}
+			</ul>
+			<ul id="view_tools" class="tool_segment">
+				{{#if hasLogics }}
+					{{ view Nucleus.ClaimLogicsButtonView context="claim" }}
+				{{/if}}
+				{{#if hasFlags }}
+					{{ view Nucleus.FlagManagerButtonView context="claim" }}
+				{{/if}}
+				{{ view Nucleus.TransferClaimButtonView context="claim" }}
+				{{ view Nucleus.DocumentsButtonView context="claim" }}
+				{{ view Nucleus.NotesButtonView context="claim" }}
+			</ul>
+		</div>
+		<ul class="object_list line_items">
+			{{ partial 'claims/lines/line' }}
+		</ul>
+	</div>
+</div>
